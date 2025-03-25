@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahoj! Jsem designérka Olga.</title>
+    <!-- font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+
+    <!-- odkaz stylovani -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+
+    <!-- hlavni uvodni stranka -->
+    <div class="page-wrapper">
+      <section class="section hero">
+        <div class="hlavni">
+          <a href="#kontakt" class="hero-link">©code by Olga</a>
+          <h1>Ahoj! Jsem <br />designérka <span class="circle"></span>lga.</h1>
+        </div>
+
+        <div class="portret">
+          <img src="Olga.png" alt="portrét designerky Olgy." />
+        </div>
+
+        <div class="marquee">
+          <div class="marquee-contenta">
+            <span
+              >Web je často to první, co Váš zákazník uvidí. &nbsp &nbsp &nbsp
+              Pomohu Vám k atraktivnímu a srozumitelnému webu. &nbsp &nbsp
+              &nbspŠaty dělají člověka a web dělá produkt.</span
+            >
+            <span
+              >Web je často to první, co Váš zákazník uvidí. &nbsp &nbsp &nbsp
+              Pomohu Vám k atraktivnímu a srozumitelnému webu. &nbsp &nbsp
+              &nbspŠaty dělají člověka a web dělá produkt.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- technické dovednosti -->
+      <section class="section dovednosti" id="dovednosti">
+        <h2 class="proces-nadpis anim-top">proces</h2>
+        <div class="dovednosti-wrapper">
+          <div class="leva-strana">
+            <div class="kruh-leva anim-top">
+              <ul>
+                <li>design webu</li>
+                <li>módní návrhářství</li>
+                <li>grafika</li>
+                <li>výtvarné umění</li>
+              </ul>
+            </div>
+          </div>
+          <div class="prava-strana">
+            <div class="kruh-prava anim-bottom">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>AdobeSuits</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <h2 class="kreativita-nadpis anim-bottom">kreativita</h2>
+      </section>
+
+      <!-- ukázky prací -->
+      <section id="ukazky" class="ukazky">
+        <div class="carousel-wrapper">
+          <div class="carousel-circle">
+            <img
+              src="sitemap.png"
+              alt="zobrazení sitemap"
+              class="carousel-image carousel-image1 active"
+            />
+            <img
+              src="emphaty-map.png"
+              alt="obrázek emphaty map"
+              class="carousel-image carousel-image2"
+            />
+            <img
+              src="rudolf.png"
+              alt="obrázek návrhu etikety"
+              class="carousel-image carousel-image3"
+            />
+          </div>
+
+          <div class="carousel-text">
+            <h3 id="carousel-title">Sitemap</h3>
+            <p id="carousel-description">
+              Sitemap je důležitou součástí procesu tvorby webu. Pomáhá nám
+              ujasnit si potřebnou logickou strukturu a obsah webu.
+            </p>
+          </div>
+
+          <button class="carousel-arrow left">&#9664;</button>
+          <button class="carousel-arrow right">&#9654;</button>
+        </div>
+      </section>
+
+      <!-- čtvrtá část kontakt -->
+      <section class="section kontakt" id="kontakt">
+        <div class="kontakt-obsah">
+          <div class="kontakt-text">
+            <h2>
+              Pojďme<br />navázat<br />spolupráci <span class="tecka">.</span>
+            </h2>
+          </div>
+
+          <div class="kontakt-bubliny">
+            <div class="bublina">+420 775 990 902</div>
+            <div class="bublina">olgajeleckova@gmail.com</div>
+            <a href="CV 2024.jpg" class="bublina" target="_blank">CV</a>
+          </div>
+          <!--<a href="#formular" class="tlacitko-ahoj">AHOJ</a>-->
+          <button id="tlacitko-ahoj">AHOJ</button>
+        </div>
+        <div class="marquee1">
+          <div class="marquee-content">
+            <span>Web je často to první, co Váš zákazník uvidí.</span>
+            <div class="dot"></div>
+            <span>Pomohu Vám k atraktivnímu a srozumitelnému webu.</span>
+            <div class="dot"></div>
+            <span>Šaty dělají člověka a web dělá produkt.</span>
+            <div class="dot"></div>
+
+            <span>Web je často to první, co Váš zákazník uvidí.</span>
+            <div class="dot"></div>
+            <span>Pomohu Vám k atraktivnímu a srozumitelnému webu.</span>
+            <div class="dot"></div>
+            <span>Šaty dělají člověka a web dělá produkt.</span>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </section>
+      <section id="formular" class="formular">
+        <button id="zavrit-formular">&times;</button>
+        <div class="formular-obsah">
+          <h3>Napiš mi zprávu</h3>
+          <div class="formular-radek">
+            <form method="post">
+              <label for="jmeno">Jméno</label>
+              <input type="text" id="jmeno" name="jmeno" required />
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required />
+              <label for="zprava">Zpráva</label>
+              <textarea id="zprava" name="zprava" rows="5" required></textarea>
+            </form>
+            <button type="submit" class="tlacitko-odeslat">ODESLAT</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- odkaz js -->
+    <script src="script.js"></script>
+  </body>
+</html>
