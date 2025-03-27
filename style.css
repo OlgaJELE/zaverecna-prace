@@ -478,7 +478,7 @@ html {
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
-  bottom: 10rem;
+  bottom: 3rem;
   will-change: transform;
   z-index: 2;
 }
